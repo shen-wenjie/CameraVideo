@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto">
+
+    <VideoView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="651dp" />
+
+    <LinearLayout
+        android:id="@+id/roundProLl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="撮影">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/timer"
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.bai.gifmaking.views.RoundProgressBar
+            android:id="@+id/roundProgressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android_custom:backColor="#ffffff"
+            android_custom:max="100"
+            android_custom:roundColor="#D1D1D1"
+            android_custom:roundProgressColor="#1CBBF2"
+            android_custom:roundWidth="5dp"
+            android_custom:startAngle="270"
+            android_custom:style="STROKE"
+            android_custom:textColor="#FF0000"
+            android_custom:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
